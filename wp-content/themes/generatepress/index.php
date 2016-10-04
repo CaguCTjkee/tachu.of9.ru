@@ -10,13 +10,16 @@
  *
  * @package GeneratePress
  */
- 
+
 // No direct access, please
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 get_header(); ?>
 
 	<div id="primary" <?php generate_content_class();?>>
+                <!-- after header widjets by CaguCT -->
+                <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('header-0')): ?><?php endif; ?>
+                <!-- after header widjets by CaguCT -->
 		<main id="main" <?php generate_main_class(); ?>>
 		<?php do_action( 'generate_before_main_content' ); ?>
 		<?php if ( have_posts() ) : ?>
@@ -45,6 +48,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php 
+<?php
 do_action( 'generate_sidebars' );
 get_footer();
