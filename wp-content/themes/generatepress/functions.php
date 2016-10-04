@@ -152,7 +152,11 @@ function generate_widgets_init()
 		__( 'Footer Widget 2', 'generatepress' ) => 'footer-2',
 		__( 'Footer Widget 3', 'generatepress' ) => 'footer-3',
 		__( 'Footer Widget 4', 'generatepress' ) => 'footer-4',
-		__( 'Footer Widget 5', 'generatepress' ) => 'footer-5'
+		__( 'Footer Widget 5', 'generatepress' ) => 'footer-5',
+            // Add new places
+		__( 'Before Footer Widget', 'generatepress' ) => 'footer-0',
+		__( 'After Header Widget', 'generatepress' ) => 'header-0'
+
 	);
 
 	// Loop through them to create our widget areas
