@@ -154,8 +154,8 @@ function generate_widgets_init()
 		__( 'Footer Widget 4', 'generatepress' ) => 'footer-4',
 		__( 'Footer Widget 5', 'generatepress' ) => 'footer-5',
             // Add new places
-		__( 'Before Footer Widget', 'generatepress' ) => 'footer-0',
-		__( 'After Header Widget', 'generatepress' ) => 'header-0'
+		__( 'After Header Widget', 'generatepress' ) => 'header-0',
+		__( 'Before Footer Widget', 'generatepress' ) => 'footer-0'
 
 	);
 
