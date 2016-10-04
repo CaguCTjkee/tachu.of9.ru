@@ -14,7 +14,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	</div><!-- #content -->
 </div><!-- #page -->
 <!-- before footer widjets by CaguCT -->
-<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-0')): ?><?php endif; ?>
+<div class="sidebar">
+    <?php if( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-0') ): ?><?php endif; ?>
+</div>
 <!-- before footer widjets by CaguCT -->
 <?php do_action('generate_before_footer'); ?>
 <div <?php generate_footer_class(); ?>>

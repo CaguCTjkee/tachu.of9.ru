@@ -17,7 +17,9 @@ get_header(); ?>
 
 	<div id="primary" <?php generate_content_class();?>>
                 <!-- after header widjets by CaguCT -->
-                <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('header-0')): ?><?php endif; ?>
+                <div class="sidebar">
+                    <?php if( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer-0') ): ?><?php endif; ?>
+                </div>
                 <!-- after header widjets by CaguCT -->
 		<main id="main" <?php generate_main_class(); ?>>
 			<?php do_action('generate_before_main_content'); ?>
